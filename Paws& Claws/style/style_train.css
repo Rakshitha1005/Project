@@ -1,0 +1,132 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/training-background.jpg'); /* Background image for training page */
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Fix the background image in place */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff; /* Ensure text is readable */
+}
+
+.hero {
+    background-color: #ff9800;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content img {
+    width: 70%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hands {
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    text-align: center;
+}
+
+.safe {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between items as needed */
+    margin: 20px 0;
+}
+
+.safe-box {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust to fit three items in a row */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center; /* Center align text under images */
+}
+
+.safe-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.safe-box h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.safe-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+.text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin: 0;
+    color: #666;
+}
+
+.text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.text ul li {
+    margin-bottom: 5px;
+}
+
+.training-img {
+    width: 100%;
+    max-width: 750px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center image horizontally and add spacing */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #666;
+}

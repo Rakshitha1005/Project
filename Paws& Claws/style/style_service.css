@@ -1,0 +1,161 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.about {
+    position: relative;
+    text-align: center;
+}
+
+.about-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns the content to the right */
+}
+
+.about-image {
+    width: 30%; /* Adjust as needed */
+    height: auto;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Distance from the left */
+    transform: translateY(-50%); /* Vertically center */
+    color: black;
+    text-align: justify;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    background-color: #fafafa;
+}
+
+.service-card {
+    width: 250px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.service-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #e67e22;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.grooming-img {
+    width: 950%;
+    max-width: 1250px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+}

@@ -1,0 +1,111 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.content img {
+    width: 70%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    margin: 0;
+    color: #666;
+}
+
+.text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.text ul li {
+    margin-bottom: 5px;
+}
+
+.additional {
+    text-align: center;
+    margin: 40px 0; /* Adjust margin as needed */
+}
+
+.why-choose-us, .meet-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.why-choose-us img, .meet-team img {
+    width: 300px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: justify;
+}
+
+.additional h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.additional p {
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

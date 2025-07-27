@@ -1,0 +1,275 @@
+body {
+    background-image: url('../img/back1.avif'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent background repetition */
+    background-attachment:fixed; /* Fixed background when scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Align the logo and navigation menu in a single line */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures spacing between logo and nav menu */
+    padding: 10px;
+}
+
+.Paws {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+.Paws img {
+    width: 20%; 
+    height: 150%; 
+}
+
+.Paws .name {
+   position: absolute;
+    top: 0;
+    left: 20%; 
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/* Styling for the Donate Now section */
+.donate-box {
+    margin: 20px 0; /* Adds margin around the donate box */
+    position: relative; /* Ensures that the dropdown is positioned correctly */
+}
+
+.donate-box a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px; 
+    font-weight: bold;
+    color: white;
+    background-color: #ff9800;
+    padding: 8px 15px; 
+    border-radius: 5px;
+    text-decoration: none;
+    gap: 8px;
+}
+
+.donate-box a:hover {
+    background-color: #e68900;
+}
+
+/* Styling for the location dropdown inside donate box */
+.location-selection {
+    margin-top: 10px; /* Adds margin to the top of the dropdown */
+}
+
+.location-selection label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#choose-location {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align menu to the right */
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px; 
+    font-weight: bold;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Dropdown menu styling */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.welcome {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.statement {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 1;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Button Styling */
+.buttons {
+    margin-top: 20px; /* Adjust the spacing above the buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-started {
+    background-color: #ff9800; /* Orange color */
+    color: white;
+}
+
+.btn-started:hover {
+    background-color: #e68900; /* Darker shade of orange on hover */
+}
+
+.btn-contact {
+    background-color: #ffffff; /* White color */
+    color: #ff9800; /* Orange text */
+    border: 2px solid #ff9800; /* Border for the Contact Us button */
+}
+
+.btn-contact:hover {
+    background-color: #ff9800; /* Orange background on hover */
+    color: white;
+}
+
+.hands{
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:0 ;
+    text-align: center;
+   
+    align-items: center;
+    
+    
+}
+
+.safe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.safe-box {
+    display: flex;
+    align-items: center;
+    flex: 0 1 48%;
+    margin-bottom: 20px;
+}
+
+.safe-box img {
+    width: 100px;
+    height:max-content;
+    margin-right: 25px;
+}
+
+.safe-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.safe-box p {
+    font-size: 19px;
+    margin: 0;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    color: #666;
+}
+
+
+
+.feature-box {
+    background-color: #A05523; /* Brownish background color */
+    color: white;
+    padding: 15px 10px; /* Padding adjusted */
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 5px; /* Slightly larger border radius */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.feature-text {
+    text-align: left;
+    flex: 1;
+}
+
+/* Title styling */
+.feature-box h2 {
+    font-size: 18px;
+    margin: 0; /* Adjust margin for consistent alignment */
+    font-weight: bold;
+    line-height: 1.5;
+}

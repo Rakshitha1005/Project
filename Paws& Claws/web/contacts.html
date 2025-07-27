@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact- Paws & Claws</title>
+    <link rel="stylesheet" type="text/css" href="../style/style_contacts.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../img/log.png" alt="Paws" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../web/Finalized_Web.html">Home</a></li>
+                <li><a href="../web/about_us.html">About Us</a></li>
+                <li><a href="../web/services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="../web/know_more.html">Know More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../web/paws.html">Blogs</a></li>
+                        <li><a href="#services">Videos</a></li>
+                        <li><a href="#appointment">Our USP</a></li>
+                    </ul>
+                </li>
+                <li><a href="../web/contacts.html">Contacts</a></li>
+                <li><a href="../web/login.html">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="feature">
+        <div class="feature-box">
+            <div class="feature-text">
+                <h2>Reach Us</h2>
+                <p>Yelahanka Hobli, Bellihalli, Bangalore North, Near 2 km from Bhartiya city mall, 1 km from Reva University</p>
+                <p>Contact Number: +91 98765 43210</p> <!-- Added Contact Number -->
+            </div>
+        </div>
+    </div>
+    
+
+
+<div class="container">
+    <div class="form-container">
+        <form>
+            <h1>Contact Us</h1>
+
+            <div class="form-group">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" placeholder="User name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Id:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Id" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobilenumber">Mobile Number:</label>
+                <input type="tel" id="mobilenumber" name="mobilenumber" placeholder="Country code" value="+91" pattern="[+]{1}[0-9]{1,3}[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Comments/Questions:</label>
+                <input type="text" id="comments" name="comments" placeholder="Enter your comments or questions" required>
+            </div>
+
+            <button type="submit" class="registerbtn">Send Message</button>
+            
+        </form>
+    </div>
+
+    <div class="image-container">
+        <img src="../img/love.png" alt="contact" class="contact-image">
+    </div>
+</div>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const password = document.getElementById('password').value;
+        const retypePassword = document.getElementById('retype_password').value;
+        if (password !== retypePassword) {
+            event.preventDefault();
+            alert("Passwords do not match!");
+        }
+    });
+</script>
+
+</body>
+</html>

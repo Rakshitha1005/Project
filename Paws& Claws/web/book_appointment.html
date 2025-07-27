@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book an Appointment - Paws & Claws Rescue</title>
+    <link rel="stylesheet" type="text/css" href="../style/style_book.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Book an Appointment</h2>
+            <p>Fill out the form below to schedule an appointment with our veterinary team. We will get back to you as soon as possible to confirm your appointment.</p>
+            <form action="submit_appointment.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <input type="submit" value="Book Appointment" class="registerbtn">
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="../img/app.jpeg" alt="Appointment Image" class="contact-image">
+        </div>
+    </div>
+</body>
+</html>

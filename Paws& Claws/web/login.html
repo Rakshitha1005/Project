@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Paws & Claws</title>
+    <link rel="stylesheet" type="text/css" href="../style/style_login.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../img/log.png" alt="Paws" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../web/Finalized_Web.html">Home</a></li>
+                <li><a href="../web/about_us.html">About Us</a></li>
+                <li><a href="../web/services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="../web/know_more.html">Know More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../web/paws.html">Blogs</a></li>
+                        <li><a href="#services">Videos</a></li>
+                        <li><a href="#appointment">Our USP</a></li>
+                    </ul>
+                </li>
+                <li><a href="../web/contacts.html">Contacts</a></li>
+                <li><a href="../web/login.html">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Blurred Background Image -->
+<div class="bg-image"></div>
+
+<!-- Login Form Content -->
+<div class="login-container">
+    <div class="login-box">
+       
+
+        <!-- Login Form with Validation -->
+        <h1>Login</h1>
+        <form action="/login" method="POST" onsubmit="return validateForm()">
+            <!-- Username Field -->
+            <input type="text" name="username" placeholder="Username" id="username" required>
+
+            <!-- Email Field -->
+            <input type="email" name="email" placeholder="Email ID" id="email" required>
+
+            <!-- Phone Number Field -->
+            <input type="tel" name="phone" placeholder="Phone Number" id="phone" pattern="[0-9]{10}" required title="Please enter a valid 10-digit phone number">
+
+            <!-- Password Field -->
+            <input type="password" name="password" placeholder="Password" id="password" minlength="6" required>
+
+            <!-- Keep me signed in checkbox -->
+            <label>
+                <input type="checkbox" name="remember"> Keep Me Signed In
+            </label>
+
+            <!-- Submit and Register buttons -->
+            <button type="submit">Login</button>
+            <button type="button" class="register-btn">Register</button>
+        </form>
+
+        <!-- Forgot Password Link -->
+        <a href="/forgot-password">Forgot your password?</a>
+    </div>
+</div>
+
+<script>
+    // Basic form validation for required fields and specific formats
+    function validateForm() {
+        // Get form values
+        const username = document.getElementById('username').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const password = document.getElementById('password').value;
+
+        // Check if any field is empty
+        if (username === "" || email === "" || phone === "" || password === "") {
+            alert("Please fill in all the fields.");
+            return false;
+        }
+
+        // Email Validation (already handled by HTML5 type=email)
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        // Phone Number Validation (already handled by HTML5 pattern)
+        if (!/^\d{10}$/.test(phone)) {
+            alert("Please enter a valid 10-digit phone number.");
+            return false;
+        }
+
+        // Password Validation (already handled by HTML5 minlength)
+        if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return false;
+        }
+
+        // If all validations pass
+        return true;
+    }
+</script>
+</body>
+</html>

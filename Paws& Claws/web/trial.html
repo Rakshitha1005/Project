@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paws & Claws Rescue - Services</title>
+    <link rel="stylesheet" type="text/css" href="../style/style_service.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+            background-color: #fafafa;
+        }
+
+        .service-card {
+            width: 250px;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .service-card a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            background-color: #e67e22;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../img/log.png" alt="Paws" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="service-container">
+        <!-- Card 1 -->
+        <div class="service-card">
+            <img src="dog-cafe.jpg" alt="Dog Cafe">
+            <h3>Dog Cafe</h3>
+            <p>Enjoy a sip of tea with the pawsome furry dogs jumping with joy around.</p>
+            <a href="#">Know More</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+            <img src="dog-boarding.jpg" alt="Dog Boarding">
+            <h3>Dog Boarding</h3>
+            <p>We provide safe, healthy, and fun environments to our guests. Dog boarding made comfortable.</p>
+            <a href="#">Know More</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+            <img src="dog-grooming.jpg" alt="Dog Grooming">
+            <h3>Dog Grooming</h3>
+            <p>We provide grooming services to ensure your dog receives spa-like care with the experts.</p>
+            <a href="#">Know More</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Paws and Claws. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

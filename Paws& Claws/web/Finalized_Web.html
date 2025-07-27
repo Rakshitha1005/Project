@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paws & Claws Rescue - Animal Life</title>
+    <link rel="stylesheet" type="text/css" href="../style/style_final.css">
+   
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../img/log.png" alt="Paws" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../web/Finalized_Web.html">Home</a></li>
+                <li><a href="../web/about_us.html">About Us</a></li>
+                <li><a href="../web/services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#know more">Know More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#vets">Blogs</a></li>
+                        <li><a href="#services">Videos</a></li>
+                        <li><a href="#appointment">Our USP</a></li>
+                    </ul>
+                </li>
+                <li><a href="../web/contacts.html">Contacts</a></li>
+                <li><a href="../web/login.html">Login</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="welcome-container">
+        <div class="welcome">
+            Welcome to Paws and Claws: <br>Where Every Life Matters
+        </div>
+    </div>
+    <div class="statement">
+        At Paws & Claws, we rescue, rehabilitate, and advocate for <br>animals, ensuring they receive compassionate care and the<br> love they deserve.
+    </div>
+    
+  <div class="content-beyond-background">
+    <div class="hands">
+        <h1>Your Pet is Safe in the Paws & Claws Team</h1>
+      </div>
+      <div class="safe">
+        <div class="safe-box">
+            <img src="../img/home (1).png" alt="Safety">
+            <div>
+                <h3>Safety at Every Step</h3>
+                <p>"At Paws & Claws, we go above and beyond to ensure your pet's safety. Our team is dedicated to implementing strict safety protocols, offering you peace of mind while your beloved companion enjoys the best care possible."</p>
+            </div>
+        </div>
+      <br><br>
+        <div class="safe-box">
+            <img src="../img/home (2).png" alt="Quality">
+            <div>
+                <h3>Quality Connections</h3>
+                <p>"At Paws & Claws, we believe in creating meaningful connections with your pets. We engage with them in ways that nurture joy and reinforce trust, making each visit a happy and fulfilling experience."</p>
+            </div>
+        </div>
+      
+        <div class="safe-box">
+            <img src="../img/home (3).png" alt="Tailored Care">
+            <div>
+                <h3>Tailored Care for Every Pet</h3>
+                <p>"Every pet is unique, and at Paws & Claws, we personalize our care to meet their individual needs. Our specialized approach ensures your pet receives the attention and love they deserve."</p>
+            </div>
+        </div><br><br>
+      
+        <div class="safe-box">
+            <img src="../img/home (4).png" alt="Expert Care">
+            <div>
+                <h3>Expert Pet Care</h3>
+                <p>"With years of expertise, the Paws & Claws team offers exceptional care, focusing on your pet’s well-being through a holistic approach that prioritizes happiness and health."</p>
+            </div>
+        </div>
+      </div>
+      </div>
+     
+        <script>
+            function animateProgressBar(id, targetValue) {
+                let progressBar = document.getElementById(id);
+                let numberElement = document.getElementById(id + '-number');
+                let value = 0;
+                let interval = setInterval(function() {
+                    if (value >= targetValue) {
+                        clearInterval(interval);
+                    } else {
+                        value++;
+                        progressBar.style.width = value + '%';
+                        numberElement.textContent = value + '%';
+                    }
+                }, 20);
+            }
+    
+            document.addEventListener('DOMContentLoaded', function() {
+                animateProgressBar('dogs-rescued-bar', 100);
+                animateProgressBar('adoptions-completed-bar', 100);
+                animateProgressBar('volunteer-hours-bar', 100);
+                animateProgressBar('funds-raised-bar', 100);
+            });
+        </script>
+        </div>
+
+        <div class="content-beyond-background">
+            <div>
+                <img src="../img/grooming.png" alt="Grooming" class="grooming-img">
+            </div>
+            <img src="../img/groom.png" alt="Groom" class="grooming-img">
+    
+            <footer>
+                <p>&copy; 2024 Paws and Claws. All rights reserved.</p>
+            </footer>
+        </div>
+        </body>
+</html>

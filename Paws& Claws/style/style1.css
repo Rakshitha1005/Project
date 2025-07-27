@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.header-container {
+    background-color: #ff9800;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Paws {
+    display: flex;
+    align-items: center;
+}
+
+.Paws img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff9800;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    display: block;
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-selection {
+    margin-bottom: 20px;
+}
+
+.location-selection label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.location-selection select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.pet-finder {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pet-finder h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pet-finder form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.pet-finder form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.pet-finder form button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pet-finder form button:hover {
+    background-color: #e68900;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,173 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.about {
+    position: relative;
+    text-align: center;
+}
+
+.about-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Aligns the content to the right */
+}
+
+.about-image {
+    width: 30%; /* Adjust as needed */
+    height: auto;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 20px; /* Distance from the left */
+    transform: translateY(-50%); /* Vertically center */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    max-width: 400px; /* Adjust as needed */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+}
+
+.mission, .our-story {
+    margin-bottom: 20px;
+}
+
+.mission h2, .our-story h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.mission-content, .story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission-image, .story-image {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.mission-text {
+    width: 50%;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.story-text {
+    width: 50%;
+    text-align: left;
+    padding-right: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-gallery img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.grooming-img {
+    width: 950%;
+    max-width: 1250px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+}

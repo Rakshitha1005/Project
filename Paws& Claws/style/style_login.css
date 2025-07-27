@@ -1,0 +1,144 @@
+/* General Page Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full height background image with blur effect */
+.bg-image {
+    background-image: url("../img/back2.webp"); /* Add your image URL */
+    filter: blur(8px);
+    -webkit-filter: blur(1px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+background-color: #f8f8f8;
+}
+
+.logo {
+width: 150px;
+height: auto;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+align-items: center;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+font-size: 16px;
+}
+
+nav ul li .dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+nav ul li:hover .dropdown-content {
+display: block;
+}
+
+nav ul li .dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+
+/* Container for the form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 2;
+    position: relative;
+}
+
+/* Login Box */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: white; /* White text on dark background */
+}
+
+/* Input Fields */
+.login-box input[type="text"],
+.login-box input[type="email"],
+.login-box input[type="password"],
+.login-box input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Login Button */
+.login-box button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Register Button */
+.login-box .register-btn {
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+/* Text Links */
+.login-box a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+/* Media Queries for smaller devices */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 20px;
+    }
+}
