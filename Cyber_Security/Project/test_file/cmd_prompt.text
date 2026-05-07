@@ -1,0 +1,70 @@
+NORMAL 1 – Basic ICMP
+
+pktmon start --capture --pkt-size 0
+ping google.com -n 20
+pktmon stop
+pktmon format PktMon.etl -o normal_1.pcapng
+move C:\WINDOWS\system32\normal_1.pcapng C:\Users\RAKSHITHA\Desktop\normal_1.pcapng
+
+what we capture:
+✔ Live packets
+✔ Real ICMP traffic
+✔ Actual network behavior
+✔ Timestamped packet data
+✔ Source & destination IPs
+✔ Protocol details (ICMP)
+
+NORMAL 2 – DNS + Web Traffic
+pktmon start --capture --pkt-size 0
+nslookup google.com
+ping microsoft.com -n 15
+pktmon stop
+pktmon format PktMon.etl -o normal_2.pcapng
+move C:\WINDOWS\system32\normal_2.pcapng C:\Users\RAKSHITHA\Desktop\normal_2.pcapng
+
+
+NORMAL 3 – TCP Connectivity (HTTP)
+pktmon start --capture --pkt-size 0
+Test-NetConnection google.com -Port 80
+Test-NetConnection google.com -Port 443
+pktmon stop
+pktmon format PktMon.etl -o normal_3.pcapng
+move C:\WINDOWS\system32\normal_3.pcapng C:\Users\RAKSHITHA\Desktop\normal_3.pcapng
+
+
+ATTACK 1 – ICMP FLOOD
+pktmon start --capture --pkt-size 0
+for ($i=0; $i -lt 3000; $i++) { ping 127.0.0.1 }
+pktmon stop
+pktmon format PktMon.etl -o attack_ddos_icmp.pcapng
+move C:\WINDOWS\system32\attack_ddos_icmp.pcapng C:\Users\RAKSHITHA\Desktop\attack_ddos_icmp.pcapng
+
+
+ATTACK 2 – TCP SYN FLOOD
+pktmon start --capture --pkt-size 0
+for ($i=0; $i -lt 2000; $i++) {
+  Test-NetConnection 127.0.0.1 -Port 80 -InformationLevel Quiet
+}
+pktmon stop
+pktmon format PktMon.etl -o attack_syn.pcapng
+move C:\WINDOWS\system32\attack_syn.pcapng C:\Users\RAKSHITHA\Desktop\attack_syn.pcapng
+
+
+ATTACK 3 – UDP FLOOD
+pktmon start --capture --pkt-size 0
+for ($i=0; $i -lt 3000; $i++) {
+  Test-NetConnection 127.0.0.1 -Port 53 -Udp
+}
+pktmon stop
+pktmon format PktMon.etl -o attack_udp.pcapng
+move C:\WINDOWS\system32\attack_udp.pcapng C:\Users\RAKSHITHA\Desktop\attack_udp.pcapng
+
+
+ATTACK 4 – MySQL Brute / Flood
+pktmon start --capture --pkt-size 0
+for ($i=0; $i -lt 1500; $i++) {
+  Test-NetConnection 127.0.0.1 -Port 3306 -InformationLevel Quiet
+}
+pktmon stop
+pktmon format PktMon.etl -o attack_mysql.pcapng
+move C:\WINDOWS\system32\attack_mysql.pcapng C:\Users\RAKSHITHA\Desktop\attack_mysql.pcapng
